@@ -728,6 +728,6 @@ for (let i = 0; i < partida.espectadores.length; i++) {
 //Iniciamos el servidor
 console.log("Server start")
 
-app.listen(8080, () => {
+app.listen(443, () => {
     console.log("The server is listening")
 })
