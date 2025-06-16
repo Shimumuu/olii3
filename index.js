@@ -193,7 +193,7 @@ app.post('/login', async (req, res) => {
                 //La hacemos httpOnly para que no se acceda desde js
                 httpOnly: true,
                 //aqui se coloca el secure para que la cookie solo se envie por https
-                secure: false, // Cambiar a true si se usa HTTPS 
+                secure: true, // Cambiar a true si se usa HTTPS 
             });
 
             //Redireccionamos al index
