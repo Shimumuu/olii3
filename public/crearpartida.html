@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+   <link rel="stylesheet" href="estilo.css">
+    <title>Crear partida</title>
+</head>
+<body>
+      <nav id="navegador">
+        <div class="contenedornav">
+            <div id="logo-titulo">
+                <img src="imagenes/logo.png" alt="Logo del sitio" id="logo">
+                <h1 id="titulo">Partida</h1>
+            </div>
+            <ul id="navegador-links">
+                <li><a href="/indexV">Inicio</a></li>
+                <li><a href="/perfil">Perfil</a></li>
+                <li><a href="/partida">Partida</a></li>
+                <li><a href="/desarrolladoresV">Desarrolladores</a></li>
+                <li><a href="/ReglayHistoriaV">Historia y reglas</a></li>
+                <li><a href="/cerrarSesion">Cerrar sesión</a></li>
+            </ul> 
+        </div>
+    </nav>
+    <div class="crear-partida">
+        <h2>Crear Partida</h2>     
+        <form action="/crearpartida" method="POST">
+        <div>
+            <label for="nombreP">Nombre de la partida</label>
+            <input type="text" id="nombrePartida" name="nombrePartida" required placeholder="Ingresa el nombre de la Partida">
+
+        </div>
+
+        <div>
+            <label for="color">Selecciona el color de las piezas</label>
+            <select id="color" name="color" required>
+                <option value="blancas">Blancas</option>
+                <option value="negras">Negras</option>
+            </select>
+        </div>
+
+        <!-- Botón para crear la partida -->
+        <button type="submit">Crear Partida</button>
+    </form></div>
+</body>
+</html>
